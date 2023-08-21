@@ -18,11 +18,11 @@ TOKEN = getenv('TOKEN')
 
 @tasks.loop()
 async def status_task():
-    await client.change_presence(status=discord.Status.online , activity=discord.Activity(type=discord.ActivityType.watching, name="Programming Services"))
+    await client.change_presence(status=discord.Status.online , activity=discord.Activity(type=discord.ActivityType.watching, name="something"))
     await asyncio.sleep(1)
-    await client.change_presence(status=discord.Status.idle ,activity=discord.Activity(type=discord.ActivityType.watching, name="main language:Python"))
+    await client.change_presence(status=discord.Status.idle ,activity=discord.Activity(type=discord.ActivityType.watching, name="something"))
     await asyncio.sleep(1)
-    await client.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name="24/7"))
+    await client.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name="something"))
     await asyncio.sleep(1)
 
 
